@@ -1,0 +1,18 @@
+{
+  "name": "chatwithmejs",
+  "main": "index.js",
+  "homepage": "https://github.com/secabhi/Chatwithme",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-cookies": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "angular-sanitize": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "ng-lodash": "^0.2.3",
+    "ngstorage": "^0.3.11"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="#/">
+    <meta charset="UTF-8">
+    <title>Chat Demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body ng-app="app">
+    <div class="header">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="/">Chat Demo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+     <div ng-view></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/ng-lodash/build/ng-lodash.js"></script>
+    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/ngstorage/ngStorage.js"></script>
+    <script src="/index.js"></script>
+    <script src="/group/grpCtrl.js"></script>
+    <script src="/main/mainCtrl.js"></script>
+    <script src="/components/chatService.js"></script>
+</body>
+</html>
