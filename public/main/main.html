@@ -1,0 +1,40 @@
+<div class="jumbotron">
+<h2>Welcome <b>{{myname}}</b></h2>
+<p>Send Messages Below</p>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-2">
+        <small class="marker">Joined User</small>
+        <ul class="list-unstyled">
+            <li class="user" ng-repeat="usr in users track by $index">
+                <span class="label btn-mini label-default userlabel">
+                    <i class="fa fa-user"></i>{{usr.myname}}
+                </span>
+
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <form ng-submit="sendMsg()">
+            <div class="input-group">
+                <input type="text" placeholder="Type a message to send" ng-model="message" class="input-sm form-control">
+                <span class="input-group-btn">
+                <input type="submit" class="input-sm btn btn-default" value="Send message">
+                </span>
+            </div>
+        </form>
+        <br>
+        <div class="well" id="chat_history">
+            <ul class="list-unstyled">
+                <li ng-repeat="msg in messages">
+                    <i class="fa fa-comment"></i>
+                    &nbsp;
+                    <b>{{msg.from}}</b>
+                    &nbsp;
+                    {{msg.message}}
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>

@@ -8,9 +8,9 @@
 //     });
 // });
 
-angular.module('app',['ngCookies','ngRoute','ngStorage','ngLodash'])
+angular.module('app',['ngCookies','ngRoute','ngStorage','ngSanitize','ngLodash'])
 .config(function($routeProvider,$locationProvider){
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
     $routeProvider
         .when('/home',{
             templateUrl:'main/main.html',

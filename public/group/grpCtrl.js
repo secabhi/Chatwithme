@@ -8,7 +8,12 @@ angular.module('app')
           $scope.joinchat = function(){
               nickname = $scope.username;
               $localStorage.nickname = $scope.username;
-              $location.path('./home')
+
+              socket.emit('joingrp',{
+                  myname:nickname
+              })
+              
+              $location.path('/home')
           }
         
     }]);  
